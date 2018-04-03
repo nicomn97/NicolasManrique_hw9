@@ -9,7 +9,7 @@ dataC=np.genfromtxt("times_cpp.csv",delimiter=",")
 
 plt.figure(figsize=(18,9))
 plt.scatter(dataP[:,0],dataP[:,1],label='Tiempos en python', c='b')
-plt.scatter(dataC[:,0],dataC[:,1],label='Tiempos en cpp', c='b')
+plt.scatter(dataC[:,0],dataC[:,1],label='Tiempos en cpp', c='r')
 plt.title('N vs T')
 plt.xlabel('$t(s)$')
 plt.ylabel('$N$')

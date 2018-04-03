@@ -17,12 +17,10 @@ def get_time(N):
     t1=time.time()-t0
     return t1
 
-archivo=open("times_python.csv","w")
+#archivo=open("times_python.csv","w")
 
 for i in range(35):    
-    archivo.write(str(i))
-    archivo.write(",")
-    archivo.write(str(get_time(i)))
-    archivo.write("\n")
+    string=str(i)+","+str(get_time(i))
+    print string
     
 
